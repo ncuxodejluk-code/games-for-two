@@ -41,9 +41,36 @@ h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;c
 .card.cyan .go{color:#a8e4ff}
 footer{margin:50px 0 70px;padding-top:22px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
 footer a{color:#a8e4ff;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:rgba(7,7,11,.72);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:14px;height:56px}
+.nav .logo{width:168px;flex:0 0 auto;text-decoration:none;white-space:nowrap;font-weight:800;
+  letter-spacing:-.02em;font-size:15px;color:var(--txt)}
+.nav .logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.switch{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid var(--line);border-radius:999px;
+  background:rgba(255,255,255,.03);flex:0 0 auto}
+.switch a{display:inline-flex;align-items:center;justify-content:center;width:106px;font-size:13px;font-weight:600;
+  line-height:1;text-decoration:none;color:var(--dim);padding:8px 0;border-radius:999px;white-space:nowrap;transition:color .2s ease}
+.switch a:hover{color:var(--txt)}
+.home{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 auto;
+  border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#dcdce8;text-decoration:none}
+.home.on{border-color:rgba(168,85,247,.6);background:rgba(168,85,247,.16);color:#fff}
+.home svg{width:16px;height:16px}
+.spacer{flex:1}
+@media(max-width:760px){.nav .logo{display:none}}
 </style>
 </head>
 <body>
+<nav class="nav"><div class="wrap">
+  <a class="logo" href="index.html">Игры на <b>двоих</b></a>
+  <div class="switch">
+    <a href="splitfiction-like/split-fiction-like-pc.html">Сплит-скрин</a>
+    <a href="coop-one-screen/coop-one-screen-pc.html">Один экран</a>
+  </div>
+  <a class="home on" href="index.html" aria-label="Главная" title="Главная"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></svg></a>
+  <div class="spacer"></div>
+</div></nav>
 <div class="wrap">
   <header>
     <div class="kicker"><i></i>две подборки · только ПК</div>
