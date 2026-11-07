@@ -7,6 +7,9 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="theme-color" content="#0b0b12">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
 <title>Игры на двоих за одним ПК — две подборки</title>
 <style>
 :root{--bg:#07070b;--line:rgba(255,255,255,.1);--dim:#9a9aae;--txt:#e9e9f2;
@@ -102,6 +105,19 @@ footer a{color:#a8e4ff;text-decoration:none}
 
   <footer>Скриншоты — из магазина Steam. Подборки собраны в ноябре 2026.</footer>
 </div>
+<script>
+(function(){
+  var V = "2026-11-08.3";
+  try {
+    fetch("version.json?t=" + Date.now(), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+      if (!d || !d.v || d.v === V) return;
+      var k = "vupd:" + d.v;
+      try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, "1"); } catch (e) {}
+      location.replace(location.pathname + "?v=" + encodeURIComponent(d.v) + location.hash);
+    }).catch(function(){});
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>
 
