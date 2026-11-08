@@ -134,7 +134,7 @@ th{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--di
 tbody tr:hover{background:rgba(255,255,255,.03)}
 .t-name a{text-decoration:none;font-weight:600}
 .t-name a:hover{color:#ffb4cd}
-.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;padding:4px 10px;background:rgba(255,255,255,.02)}
+.tbl-wrap{overflow:auto;max-height:62vh;border:1px solid var(--line);border-radius:18px;padding:4px 10px;background:rgba(255,255,255,.02)}
 
 footer{margin:80px 0 60px;padding-top:24px;border-top:1px solid var(--line);color:var(--dim);font-size:13px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 footer a{color:#ffb4cd;text-decoration:none}
@@ -153,6 +153,13 @@ footer a{color:#ffb4cd;text-decoration:none}
 .totop:hover{border-color:rgba(255,46,116,.65);background:rgba(255,46,116,.16)}
 @media(max-width:600px){.totop{right:16px;bottom:16px;width:42px;height:42px}}
 @media print{.totop{display:none}}
+.micro{width:46px;height:46px;border-radius:12px;object-fit:cover;flex:0 0 auto;border:1px solid var(--line);background:#0a0a10}
+.head{align-items:center}
+.sub .num{padding-top:0;margin-right:8px}
+.foot-links{display:inline-flex;align-items:center;gap:10px}
+.totoc{text-decoration:none;font-size:12.5px;color:#a9a9bd;border:1px solid var(--line);border-radius:999px;padding:6px 11px;white-space:nowrap;transition:all .2s ease}
+.totoc:hover{color:#fff;border-color:rgba(255,255,255,.26);background:rgba(255,255,255,.06)}
+
 
 
 /* --- единая шапка --- */
@@ -195,7 +202,7 @@ footer a{color:#ffb4cd;text-decoration:none}
     <a class="link" href="#sec03">Аркады</a>
     <a class="link" href="#sec04">Гонки</a>
     <a class="link" href="#bonus">Бонус</a>
-    <a class="link" href="#table">Шпаргалка</a>
+    <a class="link" href="#table">Содержание</a>
   </div>
 </div></nav>
 
@@ -214,6 +221,23 @@ footer a{color:#ffb4cd;text-decoration:none}
 </div></header>
 
 <main class="wrap">
+  <section class="section" id="table">
+    <div class="sec-head">
+      <span class="sec-num">00</span>
+      <div>
+        <h2>Содержание</h2>
+        <p class="sec-note">Все игры списком: клик по названию ведёт к карточке. Таблица прокручивается.</p>
+      </div>
+      <span class="sec-count">оглавление</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Игра</th><th>Год</th><th>Жанр</th><th>Игроки</th><th>Длина</th></tr></thead>
+        <tbody><tr><td class="t-name"><a href="#splitfiction">Split Fiction</a></td><td>2025</td><td>Кооп-приключение</td><td>2 игрока</td><td>≈13 часов</td></tr><tr><td class="t-name"><a href="#awayout">A Way Out</a></td><td>2018</td><td>Побег из тюрьмы</td><td>2 игрока</td><td>≈6 часов</td></tr><tr><td class="t-name"><a href="#portal2">Portal 2</a></td><td>2011</td><td>Головоломки</td><td>2 игрока</td><td>≈6 часов (кооп)</td></tr><tr><td class="t-name"><a href="#bg3">Baldur&#x27;s Gate 3</a></td><td>2023</td><td>RPG по D&amp;D</td><td>2 игрока</td><td>60+ часов</td></tr><tr><td class="t-name"><a href="#dos2">Divinity: Original Sin 2</a></td><td>2017</td><td>RPG</td><td>2 игрока</td><td>60+ часов</td></tr><tr><td class="t-name"><a href="#dosee">Divinity: Original Sin — Enhanced Edition</a></td><td>2015</td><td>RPG</td><td>2 игрока</td><td>50+ часов</td></tr><tr><td class="t-name"><a href="#outward">Outward</a></td><td>2019</td><td>Survival-RPG</td><td>2 игрока</td><td>30+ часов</td></tr><tr><td class="t-name"><a href="#gears5">Gears 5</a></td><td>2019</td><td>Экшен-шутер</td><td>2 локально / до 3 по сети</td><td>≈12 часов</td></tr><tr><td class="t-name"><a href="#ss3">Serious Sam 3: BFE</a></td><td>2011</td><td>Шутер</td><td>до 4 игроков</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#ssfusion">Serious Sam Fusion 2017</a></td><td>2017</td><td>Шутер</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#re6">Resident Evil 6</a></td><td>2013</td><td>Хоррор-экшен</td><td>2 игрока</td><td>≈20 часов</td></tr><tr><td class="t-name"><a href="#rer2">Resident Evil Revelations 2</a></td><td>2015</td><td>Хоррор</td><td>2 игрока</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#bo3">Call of Duty: Black Ops III</a></td><td>2015</td><td>Шутер</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#ww2">Call of Duty: WWII</a></td><td>2017</td><td>Шутер</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#screencheat">Screencheat</a></td><td>2014</td><td>Аркадный FPS</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#legosw">LEGO Star Wars: The Skywalker Saga</a></td><td>2022</td><td>Платформер</td><td>2 игрока</td><td>≈15 часов</td></tr><tr><td class="t-name"><a href="#legomarvel">LEGO Marvel Super Heroes</a></td><td>2013</td><td>Платформер</td><td>2 игрока</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#stardew">Stardew Valley</a></td><td>2016</td><td>Фермерский симулятор</td><td>до 4 игроков</td><td>бесконечно</td></tr><tr><td class="t-name"><a href="#speedrunners">SpeedRunners</a></td><td>2016</td><td>Гонки-платформер</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#dd">Dungeon Defenders</a></td><td>2011</td><td>Tower defense + ARPG</td><td>до 4 игроков</td><td>20+ часов</td></tr><tr><td class="t-name"><a href="#rocketleague">Rocket League</a></td><td>2015</td><td>Спорт</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#dirt5">DiRT 5</a></td><td>2020</td><td>Гонки</td><td>до 4 игроков</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#tsr">Team Sonic Racing</a></td><td>2019</td><td>Гонки</td><td>до 4 игроков</td><td>≈5 часов</td></tr><tr><td class="t-name"><a href="#sasrt">Sonic &amp; All-Stars Racing Transformed</a></td><td>2012</td><td>Гонки</td><td>до 4 игроков</td><td>≈8 часов</td></tr><tr><td class="t-name"><a href="#hotshot">Hotshot Racing</a></td><td>2020</td><td>Гонки</td><td>до 4 игроков</td><td>≈5 часов</td></tr><tr><td class="t-name"><a href="#tmturbo">Trackmania Turbo</a></td><td>2016</td><td>Гонки</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#motogp22">MotoGP 22</a></td><td>2022</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#mxatv">MX vs ATV All Out</a></td><td>2018</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#monsterjam">Monster Jam Steel Titans 2</a></td><td>2021</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
   
     <section class="section" id="sec01">
       <div class="sec-head">
@@ -233,10 +257,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">01</span>
+          <img class="micro" src="img/splitfiction_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Split Fiction</h3>
-            <div class="sub">Hazelight Studios · 2025 · Кооп-приключение</div>
+            <div class="sub"><span class="num">01</span>Hazelight Studios · 2025 · Кооп-приключение</div>
           </div>
         </div>
         <p class="desc">Мио и Зои — две писательницы, запертые внутри симуляции, которая смешивает их миры: научную фантастику и фэнтези. Каждая глава меняет жанр и механику, а экран почти всегда разделён — иногда на две половины, иногда причудливо.</p>
@@ -244,7 +268,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/splitfiction_1.jpg" aria-label="Скриншот 1"><img src="img/splitfiction_1.jpg" alt="Split Fiction — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/splitfiction_2.jpg" aria-label="Скриншот 2"><img src="img/splitfiction_2.jpg" alt="Split Fiction — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈13 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/2001120/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/2001120/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -256,10 +283,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">02</span>
+          <img class="micro" src="img/awayout_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>A Way Out</h3>
-            <div class="sub">Hazelight Studios · 2018 · Побег из тюрьмы</div>
+            <div class="sub"><span class="num">02</span>Hazelight Studios · 2018 · Побег из тюрьмы</div>
           </div>
         </div>
         <p class="desc">Двое заключённых, Винсент и Лео, бегут из тюрьмы и дальше — через всю страну. Экран поделён постоянно, а герои часто видят разные сцены: один отвлекает охрану, другой лезет через вентиляцию.</p>
@@ -267,7 +294,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/awayout_1.jpg" aria-label="Скриншот 1"><img src="img/awayout_1.jpg" alt="A Way Out — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/awayout_2.jpg" aria-label="Скриншот 2"><img src="img/awayout_2.jpg" alt="A Way Out — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1222700/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1222700/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -279,10 +309,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">03</span>
+          <img class="micro" src="img/portal2_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Portal 2</h3>
-            <div class="sub">Valve · 2011 · Головоломки</div>
+            <div class="sub"><span class="num">03</span>Valve · 2011 · Головоломки</div>
           </div>
         </div>
         <p class="desc">Отдельная кооп-кампания про Atlas и P-Body: порталы, лазеры, кубы и необходимость действовать синхронно. Разделённый экран на ПК поддержан официально — в Steam у игры есть категория «Shared/Split Screen Co-op».</p>
@@ -290,7 +320,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/portal2_1.jpg" aria-label="Скриншот 1"><img src="img/portal2_1.jpg" alt="Portal 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/portal2_2.jpg" aria-label="Скриншот 2"><img src="img/portal2_2.jpg" alt="Portal 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈6 часов (кооп)</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/620/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/620/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -302,10 +335,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">04</span>
+          <img class="micro" src="img/bg3_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Baldur&#x27;s Gate 3</h3>
-            <div class="sub">Larian Studios · 2023 · RPG по D&amp;D</div>
+            <div class="sub"><span class="num">04</span>Larian Studios · 2023 · RPG по D&amp;D</div>
           </div>
         </div>
         <p class="desc">Вдвоём можно пройти всю кампанию: разойтись по разным концам карты, устроить дуэль в лагере или разыграть диалог с NPC. Локальный кооп — на два геймпада, с разделением экрана, когда герои далеко друг от друга.</p>
@@ -313,7 +346,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/bg3_1.jpg" aria-label="Скриншот 1"><img src="img/bg3_1.jpg" alt="Baldur&#x27;s Gate 3 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/bg3_2.jpg" aria-label="Скриншот 2"><img src="img/bg3_2.jpg" alt="Baldur&#x27;s Gate 3 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">60+ часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1086940/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1086940/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -325,10 +361,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">05</span>
+          <img class="micro" src="img/dos2_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Divinity: Original Sin 2</h3>
-            <div class="sub">Larian Studios · 2017 · RPG</div>
+            <div class="sub"><span class="num">05</span>Larian Studios · 2017 · RPG</div>
           </div>
         </div>
         <p class="desc">Та же школа, что и BG3: полноценная кампания на двоих, где партия может разойтись по разным локациям — и экран делится. Плюс отдельные сцены, где игроки играют друг против друга.</p>
@@ -336,7 +372,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/dos2_1.jpg" aria-label="Скриншот 1"><img src="img/dos2_1.jpg" alt="Divinity: Original Sin 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/dos2_2.jpg" aria-label="Скриншот 2"><img src="img/dos2_2.jpg" alt="Divinity: Original Sin 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">60+ часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/435150/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/435150/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -348,10 +387,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">06</span>
+          <img class="micro" src="img/dosee_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Divinity: Original Sin — Enhanced Edition</h3>
-            <div class="sub">Larian Studios · 2015 · RPG</div>
+            <div class="sub"><span class="num">06</span>Larian Studios · 2015 · RPG</div>
           </div>
         </div>
         <p class="desc">Первая часть с кооп-диалогами и голосованием за решения: двое игроков спорят с NPC и друг с другом. Сплит на двоих здесь уже есть, просто менее отполирован, чем в сиквеле.</p>
@@ -359,7 +398,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/dosee_1.jpg" aria-label="Скриншот 1"><img src="img/dosee_1.jpg" alt="Divinity: Original Sin — Enhanced Edition — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/dosee_2.jpg" aria-label="Скриншот 2"><img src="img/dosee_2.jpg" alt="Divinity: Original Sin — Enhanced Edition — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">50+ часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/373420/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/373420/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -371,10 +413,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">07</span>
+          <img class="micro" src="img/outward_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Outward</h3>
-            <div class="sub">Nine Dots Studio · 2019 · Survival-RPG</div>
+            <div class="sub"><span class="num">07</span>Nine Dots Studio · 2019 · Survival-RPG</div>
           </div>
         </div>
         <p class="desc">Хардкорное приключение без быстрых путешествий: два игрока делят один мир, костёр, рюкзак и последствия. Сплит на двоих, и умереть можно от первого же волка.</p>
@@ -382,7 +424,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/outward_1.jpg" aria-label="Скриншот 1"><img src="img/outward_1.jpg" alt="Outward — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/outward_2.jpg" aria-label="Скриншот 2"><img src="img/outward_2.jpg" alt="Outward — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">30+ часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/794260/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/794260/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -394,10 +439,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">08</span>
+          <img class="micro" src="img/gears5_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Gears 5</h3>
-            <div class="sub">The Coalition · 2019 · Экшен-шутер</div>
+            <div class="sub"><span class="num">08</span>The Coalition · 2019 · Экшен-шутер</div>
           </div>
         </div>
         <p class="desc">Кампания проходится вдвоём на одном экране, плюс режим Horde на двоих. Крупный бюджет, совместные добивания и спасения — и лучший экшен в серии.</p>
@@ -405,7 +450,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/gears5_1.jpg" aria-label="Скриншот 1"><img src="img/gears5_1.jpg" alt="Gears 5 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/gears5_2.jpg" aria-label="Скриншот 2"><img src="img/gears5_2.jpg" alt="Gears 5 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 локально / до 3 по сети · <span class="accent">≈12 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1097840/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1097840/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article></div>
@@ -428,10 +476,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">09</span>
+          <img class="micro" src="img/ss3_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Serious Sam 3: BFE</h3>
-            <div class="sub">Croteam · 2011 · Шутер</div>
+            <div class="sub"><span class="num">09</span>Croteam · 2011 · Шутер</div>
           </div>
         </div>
         <p class="desc">Мясной шутер в духе 90-х: орды врагов, огромные арены и разделённый экран до четырёх игроков на одном ПК. Идеально, если хочется просто палить вдвоём без сюжетных пауз.</p>
@@ -439,7 +487,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/ss3_1.jpg" aria-label="Скриншот 1"><img src="img/ss3_1.jpg" alt="Serious Sam 3: BFE — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/ss3_2.jpg" aria-label="Скриншот 2"><img src="img/ss3_2.jpg" alt="Serious Sam 3: BFE — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">≈10 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/41070/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/41070/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -451,10 +502,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">10</span>
+          <img class="micro" src="img/ssfusion_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Serious Sam Fusion 2017</h3>
-            <div class="sub">Croteam · 2017 · Шутер</div>
+            <div class="sub"><span class="num">10</span>Croteam · 2017 · Шутер</div>
           </div>
         </div>
         <p class="desc">Сборка HD-ремастеров первых частей с общим лобби и сплит-экраном до четырёх человек. Тот же принцип, но с классическими уровнями и поддержкой мастерской.</p>
@@ -462,7 +513,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/ssfusion_1.jpg" aria-label="Скриншот 1"><img src="img/ssfusion_1.jpg" alt="Serious Sam Fusion 2017 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/ssfusion_2.jpg" aria-label="Скриншот 2"><img src="img/ssfusion_2.jpg" alt="Serious Sam Fusion 2017 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/564310/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/564310/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -474,10 +528,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">11</span>
+          <img class="micro" src="img/re6_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Resident Evil 6</h3>
-            <div class="sub">Capcom · 2013 · Хоррор-экшен</div>
+            <div class="sub"><span class="num">11</span>Capcom · 2013 · Хоррор-экшен</div>
           </div>
         </div>
         <p class="desc">Четыре кампании, каждую можно пройти вдвоём на разделённом экране. Кооп встроен в сюжет: напарник прикрывает спину, лечит и тащит на себе.</p>
@@ -485,7 +539,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/re6_1.jpg" aria-label="Скриншот 1"><img src="img/re6_1.jpg" alt="Resident Evil 6 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/re6_2.jpg" aria-label="Скриншот 2"><img src="img/re6_2.jpg" alt="Resident Evil 6 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈20 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/221040/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/221040/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -497,10 +554,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">12</span>
+          <img class="micro" src="img/rer2_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Resident Evil Revelations 2</h3>
-            <div class="sub">Capcom · 2015 · Хоррор</div>
+            <div class="sub"><span class="num">12</span>Capcom · 2015 · Хоррор</div>
           </div>
         </div>
         <p class="desc">Эпизодическая история с асимметричным коопом: один играет бойцом, второй — поддержкой с фонарём и ломом. Сплит на двоих и заметно более плотная атмосфера, чем в RE6.</p>
@@ -508,7 +565,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/rer2_1.jpg" aria-label="Скриншот 1"><img src="img/rer2_1.jpg" alt="Resident Evil Revelations 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/rer2_2.jpg" aria-label="Скриншот 2"><img src="img/rer2_2.jpg" alt="Resident Evil Revelations 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/287290/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/287290/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -520,10 +580,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">13</span>
+          <img class="micro" src="img/bo3_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Call of Duty: Black Ops III</h3>
-            <div class="sub">Treyarch · 2015 · Шутер</div>
+            <div class="sub"><span class="num">13</span>Treyarch · 2015 · Шутер</div>
           </div>
         </div>
         <p class="desc">Сплит на двоих в кампании, зомби-режиме и мультиплеере. Главный повод — зомби-карты: волны, перки и прокачка оружия на двоих.</p>
@@ -531,7 +591,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/bo3_1.jpg" aria-label="Скриншот 1"><img src="img/bo3_1.jpg" alt="Call of Duty: Black Ops III — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/bo3_2.jpg" aria-label="Скриншот 2"><img src="img/bo3_2.jpg" alt="Call of Duty: Black Ops III — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/311210/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/311210/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -543,10 +606,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">14</span>
+          <img class="micro" src="img/ww2_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Call of Duty: WWII</h3>
-            <div class="sub">Sledgehammer Games · 2017 · Шутер</div>
+            <div class="sub"><span class="num">14</span>Sledgehammer Games · 2017 · Шутер</div>
           </div>
         </div>
         <p class="desc">Кампания здесь одиночная, а вот зомби-режим Nazi Zombies играется вдвоём на одном экране. Мрачный хоррор-аттракцион с прокачкой и пасхалками.</p>
@@ -554,7 +617,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/ww2_1.jpg" aria-label="Скриншот 1"><img src="img/ww2_1.jpg" alt="Call of Duty: WWII — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/ww2_2.jpg" aria-label="Скриншот 2"><img src="img/ww2_2.jpg" alt="Call of Duty: WWII — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/476600/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/476600/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -566,10 +632,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">15</span>
+          <img class="micro" src="img/screencheat_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Screencheat</h3>
-            <div class="sub">Samurai Punk · 2014 · Аркадный FPS</div>
+            <div class="sub"><span class="num">15</span>Samurai Punk · 2014 · Аркадный FPS</div>
           </div>
         </div>
         <p class="desc">Шутер, где противники невидимы — и подглядывать в их половину экрана не запрещено, а обязательно. Четыре сплит-экрана, абсурдное оружие, отличная вечеринка.</p>
@@ -577,7 +643,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/screencheat_1.jpg" aria-label="Скриншот 1"><img src="img/screencheat_1.jpg" alt="Screencheat — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/screencheat_2.jpg" aria-label="Скриншот 2"><img src="img/screencheat_2.jpg" alt="Screencheat — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/301970/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/301970/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article></div>
@@ -600,10 +669,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">16</span>
+          <img class="micro" src="img/legosw_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>LEGO Star Wars: The Skywalker Saga</h3>
-            <div class="sub">TT Games · 2022 · Платформер</div>
+            <div class="sub"><span class="num">16</span>TT Games · 2022 · Платформер</div>
           </div>
         </div>
         <p class="desc">Все девять эпизодов саги с динамическим сплитом: экран расходится, когда герои разбегаются, и снова сливается. Просто, ярко и отлично заходит вдвоём.</p>
@@ -611,7 +680,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/legosw_1.jpg" aria-label="Скриншот 1"><img src="img/legosw_1.jpg" alt="LEGO Star Wars: The Skywalker Saga — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/legosw_2.jpg" aria-label="Скриншот 2"><img src="img/legosw_2.jpg" alt="LEGO Star Wars: The Skywalker Saga — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈15 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/920210/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/920210/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -623,10 +695,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">17</span>
+          <img class="micro" src="img/legomarvel_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>LEGO Marvel Super Heroes</h3>
-            <div class="sub">TT Games · 2013 · Платформер</div>
+            <div class="sub"><span class="num">17</span>TT Games · 2013 · Платформер</div>
           </div>
         </div>
         <p class="desc">Классика LEGO-коопа: десятки героев, разрушаемые декорации и горизонтальный сплит. Второй игрок может подключиться и отключиться в любой момент.</p>
@@ -634,7 +706,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/legomarvel_1.jpg" aria-label="Скриншот 1"><img src="img/legomarvel_1.jpg" alt="LEGO Marvel Super Heroes — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/legomarvel_2.jpg" aria-label="Скриншот 2"><img src="img/legomarvel_2.jpg" alt="LEGO Marvel Super Heroes — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/249130/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/249130/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -646,10 +721,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">18</span>
+          <img class="micro" src="img/stardew_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Stardew Valley</h3>
-            <div class="sub">ConcernedApe · 2016 · Фермерский симулятор</div>
+            <div class="sub"><span class="num">18</span>ConcernedApe · 2016 · Фермерский симулятор</div>
           </div>
         </div>
         <p class="desc">С обновления 1.5 в игре есть кооп на одном экране с разделением до четырёх игроков: общая ферма, свои домики, совместные шахты и рыбалка. Медленный, уютный и бесконечный.</p>
@@ -657,7 +732,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/stardew_1.jpg" aria-label="Скриншот 1"><img src="img/stardew_1.jpg" alt="Stardew Valley — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/stardew_2.jpg" aria-label="Скриншот 2"><img src="img/stardew_2.jpg" alt="Stardew Valley — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">бесконечно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/413150/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/413150/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -669,10 +747,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">19</span>
+          <img class="micro" src="img/speedrunners_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>SpeedRunners</h3>
-            <div class="sub">DoubleDutch Games · 2016 · Гонки-платформер</div>
+            <div class="sub"><span class="num">19</span>DoubleDutch Games · 2016 · Гонки-платформер</div>
           </div>
         </div>
         <p class="desc">Четыре сплит-экрана и гонка по крышам с крюком-кошкой: кто отстал — вылетает за край. Простые правила, злые эмоции, идеально на 15 минут.</p>
@@ -680,7 +758,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/speedrunners_1.jpg" aria-label="Скриншот 1"><img src="img/speedrunners_1.jpg" alt="SpeedRunners — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/speedrunners_2.jpg" aria-label="Скриншот 2"><img src="img/speedrunners_2.jpg" alt="SpeedRunners — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/207140/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/207140/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -692,10 +773,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">20</span>
+          <img class="micro" src="img/dd_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Dungeon Defenders</h3>
-            <div class="sub">Trendy Entertainment · 2011 · Tower defense + ARPG</div>
+            <div class="sub"><span class="num">20</span>Trendy Entertainment · 2011 · Tower defense + ARPG</div>
           </div>
         </div>
         <p class="desc">Смесь башенной защиты и экшена: четыре героя, четыре сплит-экрана, волны монстров и прокачка лута. Кооп здесь одновременно локальный и сетевой.</p>
@@ -703,7 +784,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/dd_1.jpg" aria-label="Скриншот 1"><img src="img/dd_1.jpg" alt="Dungeon Defenders — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/dd_2.jpg" aria-label="Скриншот 2"><img src="img/dd_2.jpg" alt="Dungeon Defenders — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">20+ часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/65800/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/65800/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article></div>
@@ -726,10 +810,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">21</span>
+          <img class="micro" src="img/rocketleague_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Rocket League</h3>
-            <div class="sub">Psyonix · 2015 · Спорт</div>
+            <div class="sub"><span class="num">21</span>Psyonix · 2015 · Спорт</div>
           </div>
         </div>
         <p class="desc">Футбол машинами: сплит на двоих-четверых, матчи по пять минут, космическая физика. Бесплатная, с локальным коопом против ботов и друг против друга.</p>
@@ -737,7 +821,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/rocketleague_1.jpg" aria-label="Скриншот 1"><img src="img/rocketleague_1.jpg" alt="Rocket League — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/rocketleague_2.jpg" aria-label="Скриншот 2"><img src="img/rocketleague_2.jpg" alt="Rocket League — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/252950/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/252950/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -749,10 +836,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">22</span>
+          <img class="micro" src="img/dirt5_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>DiRT 5</h3>
-            <div class="sub">Codemasters · 2020 · Гонки</div>
+            <div class="sub"><span class="num">22</span>Codemasters · 2020 · Гонки</div>
           </div>
         </div>
         <p class="desc">Ралли-кросс, ледяные трассы и стадионы — и всё это со сплит-экраном до четырёх игроков, включая карьеру. Самый дружелюбный вариант «погонять вдвоём» на ПК.</p>
@@ -760,7 +847,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/dirt5_1.jpg" aria-label="Скриншот 1"><img src="img/dirt5_1.jpg" alt="DiRT 5 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/dirt5_2.jpg" aria-label="Скриншот 2"><img src="img/dirt5_2.jpg" alt="DiRT 5 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">≈10 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1038250/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1038250/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -772,10 +862,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">23</span>
+          <img class="micro" src="img/tsr_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Team Sonic Racing</h3>
-            <div class="sub">Sumo Digital · 2019 · Гонки</div>
+            <div class="sub"><span class="num">23</span>Sumo Digital · 2019 · Гонки</div>
           </div>
         </div>
         <p class="desc">Командные гонки: трое в команде делят кольца и бусты, а сплит держит до четырёх игроков. Ярко, быстро и с настоящими кооп-механиками, а не просто «каждый сам за себя».</p>
@@ -783,7 +873,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/tsr_1.jpg" aria-label="Скриншот 1"><img src="img/tsr_1.jpg" alt="Team Sonic Racing — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/tsr_2.jpg" aria-label="Скриншот 2"><img src="img/tsr_2.jpg" alt="Team Sonic Racing — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">≈5 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/785260/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/785260/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -795,10 +888,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">24</span>
+          <img class="micro" src="img/sasrt_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Sonic &amp; All-Stars Racing Transformed</h3>
-            <div class="sub">Sumo Digital · 2012 · Гонки</div>
+            <div class="sub"><span class="num">24</span>Sumo Digital · 2012 · Гонки</div>
           </div>
         </div>
         <p class="desc">Трансформирующиеся болиды: машина, катер, самолёт — в зависимости от участка трассы. Сплит до четырёх, куча Sega-персонажей и режим «все против всех».</p>
@@ -806,7 +899,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/sasrt_1.jpg" aria-label="Скриншот 1"><img src="img/sasrt_1.jpg" alt="Sonic &amp; All-Stars Racing Transformed — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/sasrt_2.jpg" aria-label="Скриншот 2"><img src="img/sasrt_2.jpg" alt="Sonic &amp; All-Stars Racing Transformed — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">≈8 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/212480/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/212480/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -818,10 +914,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">25</span>
+          <img class="micro" src="img/hotshot_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Hotshot Racing</h3>
-            <div class="sub">Lucky Mountain Games / Sumo · 2020 · Гонки</div>
+            <div class="sub"><span class="num">25</span>Lucky Mountain Games / Sumo · 2020 · Гонки</div>
           </div>
         </div>
         <p class="desc">Аркадные гонки в стиле начала 90-х: низкополигональные машины, дрифт и четыре сплит-экрана. Лёгкая, быстрая, без симуляторной духоты.</p>
@@ -829,7 +925,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/hotshot_1.jpg" aria-label="Скриншот 1"><img src="img/hotshot_1.jpg" alt="Hotshot Racing — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/hotshot_2.jpg" aria-label="Скриншот 2"><img src="img/hotshot_2.jpg" alt="Hotshot Racing — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">≈5 часов</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/609920/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/609920/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -841,10 +940,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">26</span>
+          <img class="micro" src="img/tmturbo_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Trackmania Turbo</h3>
-            <div class="sub">Nadeo · 2016 · Гонки</div>
+            <div class="sub"><span class="num">26</span>Nadeo · 2016 · Гонки</div>
           </div>
         </div>
         <p class="desc">Аркадный time-attack на безумных трассах с петлями и трамплинами. Сплит на четверых превращает заезды в челлендж «кто меньше раз улетит с трассы».</p>
@@ -852,7 +951,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/tmturbo_1.jpg" aria-label="Скриншот 1"><img src="img/tmturbo_1.jpg" alt="Trackmania Turbo — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/tmturbo_2.jpg" aria-label="Скриншот 2"><img src="img/tmturbo_2.jpg" alt="Trackmania Turbo — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/375900/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/375900/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -864,10 +966,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">27</span>
+          <img class="micro" src="img/motogp22_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>MotoGP 22</h3>
-            <div class="sub">Milestone · 2022 · Гонки</div>
+            <div class="sub"><span class="num">27</span>Milestone · 2022 · Гонки</div>
           </div>
         </div>
         <p class="desc">Первый сплит в серии: два игрока на одном экране гоняют по реальным трассам MotoGP. Симуляторная физика, но с аркадными помощниками.</p>
@@ -875,7 +977,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/motogp22_1.jpg" aria-label="Скриншот 1"><img src="img/motogp22_1.jpg" alt="MotoGP 22 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/motogp22_2.jpg" aria-label="Скриншот 2"><img src="img/motogp22_2.jpg" alt="MotoGP 22 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1710580/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1710580/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -887,10 +992,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">28</span>
+          <img class="micro" src="img/mxatv_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>MX vs ATV All Out</h3>
-            <div class="sub">Rainbow Studios · 2018 · Гонки</div>
+            <div class="sub"><span class="num">28</span>Rainbow Studios · 2018 · Гонки</div>
           </div>
         </div>
         <p class="desc">Мотокросс и квадроциклы: сплит на двоих, трюки, суперкросс и открытые локации. Простая аркада для двоих за одним монитором.</p>
@@ -898,7 +1003,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/mxatv_1.jpg" aria-label="Скриншот 1"><img src="img/mxatv_1.jpg" alt="MX vs ATV All Out — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/mxatv_2.jpg" aria-label="Скриншот 2"><img src="img/mxatv_2.jpg" alt="MX vs ATV All Out — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/520940/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/520940/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article>
@@ -910,10 +1018,10 @@ footer a{color:#ffb4cd;text-decoration:none}
       </div>
       <div class="body">
         <div class="head">
-          <span class="num">29</span>
+          <img class="micro" src="img/monsterjam_h.jpg" alt="" loading="lazy">
           <div class="head-txt">
             <h3>Monster Jam Steel Titans 2</h3>
-            <div class="sub">Rainbow Studios · 2021 · Гонки</div>
+            <div class="sub"><span class="num">29</span>Rainbow Studios · 2021 · Гонки</div>
           </div>
         </div>
         <p class="desc">Монстр-траки на аренах: сплит на двоих и кооп-режим, где можно вместе ломать декорации и прыгать с трамплинов.</p>
@@ -921,7 +1029,10 @@ footer a{color:#ffb4cd;text-decoration:none}
         <div class="gallery"><button class="shot" type="button" data-full="img/monsterjam_1.jpg" aria-label="Скриншот 1"><img src="img/monsterjam_1.jpg" alt="Monster Jam Steel Titans 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/monsterjam_2.jpg" aria-label="Скриншот 2"><img src="img/monsterjam_2.jpg" alt="Monster Jam Steel Titans 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <a class="steam" href="https://store.steampowered.com/app/1205480/" target="_blank" rel="noopener">Steam ↗</a>
+          <span class="foot-links">
+            <a class="totoc" href="#table">↑ к содержанию</a>
+            <a class="steam" href="https://store.steampowered.com/app/1205480/" target="_blank" rel="noopener">Steam ↗</a>
+          </span>
         </div>
       </div>
     </article></div>
@@ -1027,22 +1138,6 @@ footer a{color:#ffb4cd;text-decoration:none}
     </article></div>
   </section>
 
-  <section class="section" id="table">
-    <div class="sec-head">
-      <span class="sec-num">06</span>
-      <div>
-        <h2>Шпаргалка</h2>
-        <p class="sec-note">Все 29 игр основной части — одним взглядом.</p>
-      </div>
-      <span class="sec-count">таблица</span>
-    </div>
-    <div class="tbl-wrap">
-      <table>
-        <thead><tr><th>Игра</th><th>Год</th><th>Жанр</th><th>Игроки</th><th>Длина</th></tr></thead>
-        <tbody><tr><td class="t-name"><a href="#splitfiction">Split Fiction</a></td><td>2025</td><td>Кооп-приключение</td><td>2 игрока</td><td>≈13 часов</td></tr><tr><td class="t-name"><a href="#awayout">A Way Out</a></td><td>2018</td><td>Побег из тюрьмы</td><td>2 игрока</td><td>≈6 часов</td></tr><tr><td class="t-name"><a href="#portal2">Portal 2</a></td><td>2011</td><td>Головоломки</td><td>2 игрока</td><td>≈6 часов (кооп)</td></tr><tr><td class="t-name"><a href="#bg3">Baldur&#x27;s Gate 3</a></td><td>2023</td><td>RPG по D&amp;D</td><td>2 игрока</td><td>60+ часов</td></tr><tr><td class="t-name"><a href="#dos2">Divinity: Original Sin 2</a></td><td>2017</td><td>RPG</td><td>2 игрока</td><td>60+ часов</td></tr><tr><td class="t-name"><a href="#dosee">Divinity: Original Sin — Enhanced Edition</a></td><td>2015</td><td>RPG</td><td>2 игрока</td><td>50+ часов</td></tr><tr><td class="t-name"><a href="#outward">Outward</a></td><td>2019</td><td>Survival-RPG</td><td>2 игрока</td><td>30+ часов</td></tr><tr><td class="t-name"><a href="#gears5">Gears 5</a></td><td>2019</td><td>Экшен-шутер</td><td>2 локально / до 3 по сети</td><td>≈12 часов</td></tr><tr><td class="t-name"><a href="#ss3">Serious Sam 3: BFE</a></td><td>2011</td><td>Шутер</td><td>до 4 игроков</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#ssfusion">Serious Sam Fusion 2017</a></td><td>2017</td><td>Шутер</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#re6">Resident Evil 6</a></td><td>2013</td><td>Хоррор-экшен</td><td>2 игрока</td><td>≈20 часов</td></tr><tr><td class="t-name"><a href="#rer2">Resident Evil Revelations 2</a></td><td>2015</td><td>Хоррор</td><td>2 игрока</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#bo3">Call of Duty: Black Ops III</a></td><td>2015</td><td>Шутер</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#ww2">Call of Duty: WWII</a></td><td>2017</td><td>Шутер</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#screencheat">Screencheat</a></td><td>2014</td><td>Аркадный FPS</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#legosw">LEGO Star Wars: The Skywalker Saga</a></td><td>2022</td><td>Платформер</td><td>2 игрока</td><td>≈15 часов</td></tr><tr><td class="t-name"><a href="#legomarvel">LEGO Marvel Super Heroes</a></td><td>2013</td><td>Платформер</td><td>2 игрока</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#stardew">Stardew Valley</a></td><td>2016</td><td>Фермерский симулятор</td><td>до 4 игроков</td><td>бесконечно</td></tr><tr><td class="t-name"><a href="#speedrunners">SpeedRunners</a></td><td>2016</td><td>Гонки-платформер</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#dd">Dungeon Defenders</a></td><td>2011</td><td>Tower defense + ARPG</td><td>до 4 игроков</td><td>20+ часов</td></tr><tr><td class="t-name"><a href="#rocketleague">Rocket League</a></td><td>2015</td><td>Спорт</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#dirt5">DiRT 5</a></td><td>2020</td><td>Гонки</td><td>до 4 игроков</td><td>≈10 часов</td></tr><tr><td class="t-name"><a href="#tsr">Team Sonic Racing</a></td><td>2019</td><td>Гонки</td><td>до 4 игроков</td><td>≈5 часов</td></tr><tr><td class="t-name"><a href="#sasrt">Sonic &amp; All-Stars Racing Transformed</a></td><td>2012</td><td>Гонки</td><td>до 4 игроков</td><td>≈8 часов</td></tr><tr><td class="t-name"><a href="#hotshot">Hotshot Racing</a></td><td>2020</td><td>Гонки</td><td>до 4 игроков</td><td>≈5 часов</td></tr><tr><td class="t-name"><a href="#tmturbo">Trackmania Turbo</a></td><td>2016</td><td>Гонки</td><td>до 4 игроков</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#motogp22">MotoGP 22</a></td><td>2022</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#mxatv">MX vs ATV All Out</a></td><td>2018</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr><tr><td class="t-name"><a href="#monsterjam">Monster Jam Steel Titans 2</a></td><td>2021</td><td>Гонки</td><td>2 игрока</td><td>сессионно</td></tr></tbody>
-      </table>
-    </div>
-  </section>
 
   <section class="section" id="notes">
     <div class="sec-head">
@@ -1086,7 +1181,7 @@ footer a{color:#ffb4cd;text-decoration:none}
 
 <script>
 (function(){
-  var V = "2026-11-08.3";
+  var V = "2026-11-09.2";
   try {
     fetch("../version.json?t=" + Date.now(), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
       if (!d || !d.v || d.v === V) return;
