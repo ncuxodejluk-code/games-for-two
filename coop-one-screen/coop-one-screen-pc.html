@@ -111,7 +111,8 @@ h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;c
 .shot{padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#000;cursor:zoom-in;line-height:0}
 .shot img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .4s ease,filter .4s ease}
 .shot:hover img{transform:scale(1.035);filter:brightness(1.08)}
-.foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;font-size:13.5px;color:var(--dim)}
+.foot{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:13.5px;color:var(--dim)}
+.foot .facts{margin-left:auto}
 .accent{color:#a8e4ff}
 .steam{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;color:#dcdce8;transition:all .2s}
 .steam:hover{border-color:rgba(255,46,116,.5);color:#fff;background:rgba(255,46,116,.1)}
@@ -162,8 +163,12 @@ footer a{color:#a8e4ff;text-decoration:none}
 .head{align-items:center}
 .sub .num{padding-top:0;margin-right:8px}
 .foot-links{display:inline-flex;align-items:center;gap:10px}
-.totoc{text-decoration:none;font-size:12.5px;color:#a9a9bd;border:1px solid var(--line);border-radius:999px;padding:6px 11px;white-space:nowrap;transition:all .2s ease}
-.totoc:hover{color:#fff;border-color:rgba(255,255,255,.26);background:rgba(255,255,255,.06)}
+.totoc{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700;
+  color:#0b0b12;border:0;border-radius:999px;padding:8px 15px;white-space:nowrap;
+  background:linear-gradient(90deg,#38bdf8,#a855f7);transition:filter .2s ease,transform .2s ease;
+  box-shadow:0 10px 24px -14px rgba(56,189,248,.9)}
+.totoc:hover{filter:brightness(1.12);transform:translateY(-1px)}
+
 
 </style>
 </head>
@@ -252,11 +257,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>кооп-кампания</li><li>уютное</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/unravel2_1.jpg" aria-label="Скриншот 1"><img src="img/unravel2_1.jpg" alt="Unravel Two — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/unravel2_2.jpg" aria-label="Скриншот 2"><img src="img/unravel2_2.jpg" alt="Unravel Two — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1225570/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1225570/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -278,11 +281,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>кооп-кампания</li><li>сказка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/brothers_1.jpg" aria-label="Скриншот 1"><img src="img/brothers_1.jpg" alt="Brothers: A Tale of Two Sons Remake — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/brothers_2.jpg" aria-label="Скриншот 2"><img src="img/brothers_2.jpg" alt="Brothers: A Tale of Two Sons Remake — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/2153350/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/2153350/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -304,11 +305,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>кооп-кампания</li><li>культура</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/neveralone_1.jpg" aria-label="Скриншот 1"><img src="img/neveralone_1.jpg" alt="Never Alone (Kisima Ingitchuna) — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/neveralone_2.jpg" aria-label="Скриншот 2"><img src="img/neveralone_2.jpg" alt="Never Alone (Kisima Ingitchuna) — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈5 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/295790/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/295790/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -330,11 +329,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/degrees_1.jpg" aria-label="Скриншот 1"><img src="img/degrees_1.jpg" alt="Degrees of Separation — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/degrees_2.jpg" aria-label="Скриншот 2"><img src="img/degrees_2.jpg" alt="Degrees of Separation — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈5 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/809880/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/809880/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -356,11 +353,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>медитативное</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/pode_1.jpg" aria-label="Скриншот 1"><img src="img/pode_1.jpg" alt="Pode — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/pode_2.jpg" aria-label="Скриншот 2"><img src="img/pode_2.jpg" alt="Pode — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈5 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/944080/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/944080/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -382,11 +377,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>романтика</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/haven_1.jpg" aria-label="Скриншот 1"><img src="img/haven_1.jpg" alt="Haven — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/haven_2.jpg" aria-label="Скриншот 2"><img src="img/haven_2.jpg" alt="Haven — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈15 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/983970/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/983970/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -408,11 +401,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>RPG</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/seaofstars_1.jpg" aria-label="Скриншот 1"><img src="img/seaofstars_1.jpg" alt="Sea of Stars — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/seaofstars_2.jpg" aria-label="Скриншот 2"><img src="img/seaofstars_2.jpg" alt="Sea of Stars — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈30 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1244090/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1244090/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -434,11 +425,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>классика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/lara_1.jpg" aria-label="Скриншот 1"><img src="img/lara_1.jpg" alt="Lara Croft and the Guardian of Light — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/lara_2.jpg" aria-label="Скриншот 2"><img src="img/lara_2.jpg" alt="Lara Croft and the Guardian of Light — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/35130/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/35130/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -460,11 +449,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>платформер</li><li>семейная</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/sackboy_1.jpg" aria-label="Скриншот 1"><img src="img/sackboy_1.jpg" alt="Sackboy: A Big Adventure — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/sackboy_2.jpg" aria-label="Скриншот 2"><img src="img/sackboy_2.jpg" alt="Sackboy: A Big Adventure — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1599660/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1599660/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -486,11 +473,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>абсурд</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/goose_1.jpg" aria-label="Скриншот 1"><img src="img/goose_1.jpg" alt="Untitled Goose Game — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/goose_2.jpg" aria-label="Скриншот 2"><img src="img/goose_2.jpg" alt="Untitled Goose Game — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/837470/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/837470/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -512,11 +497,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>музыка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/rayman_1.jpg" aria-label="Скриншот 1"><img src="img/rayman_1.jpg" alt="Rayman Legends — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/rayman_2.jpg" aria-label="Скриншот 2"><img src="img/rayman_2.jpg" alt="Rayman Legends — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/242550/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/242550/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -549,11 +532,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>абсурд</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/phogs_1.jpg" aria-label="Скриншот 1"><img src="img/phogs_1.jpg" alt="PHOGS! — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/phogs_2.jpg" aria-label="Скриншот 2"><img src="img/phogs_2.jpg" alt="PHOGS! — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/850320/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/850320/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -575,11 +556,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>координация</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/biped2_1.jpg" aria-label="Скриншот 1"><img src="img/biped2_1.jpg" alt="Biped 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/biped2_2.jpg" aria-label="Скриншот 2"><img src="img/biped2_2.jpg" alt="Biped 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/2560240/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/2560240/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -601,11 +580,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>милота</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/keywe_1.jpg" aria-label="Скриншот 1"><img src="img/keywe_1.jpg" alt="KeyWe — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/keywe_2.jpg" aria-label="Скриншот 2"><img src="img/keywe_2.jpg" alt="KeyWe — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1242980/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1242980/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -627,11 +604,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>головоломки</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/deathsquared_1.jpg" aria-label="Скриншот 1"><img src="img/deathsquared_1.jpg" alt="Death Squared — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/deathsquared_2.jpg" aria-label="Скриншот 2"><img src="img/deathsquared_2.jpg" alt="Death Squared — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/471810/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/471810/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -653,11 +628,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 8 игроков</li><li>вечеринка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/picopark2_1.jpg" aria-label="Скриншот 1"><img src="img/picopark2_1.jpg" alt="PICO PARK 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/picopark2_2.jpg" aria-label="Скриншот 2"><img src="img/picopark2_2.jpg" alt="PICO PARK 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 8 игроков · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/2644470/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/2644470/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -679,11 +652,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 8 игроков</li><li>координация</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/picopark_1.jpg" aria-label="Скриншот 1"><img src="img/picopark_1.jpg" alt="PICO PARK — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/picopark_2.jpg" aria-label="Скриншот 2"><img src="img/picopark_2.jpg" alt="PICO PARK — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 8 игроков · <span class="accent">≈3 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1509960/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1509960/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -705,11 +676,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>гравитация</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/ibbobb_1.jpg" aria-label="Скриншот 1"><img src="img/ibbobb_1.jpg" alt="ibb &amp; obb — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/ibbobb_2.jpg" aria-label="Скриншот 2"><img src="img/ibbobb_2.jpg" alt="ibb &amp; obb — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈3 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/95400/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/95400/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -731,11 +700,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/shifthappens_1.jpg" aria-label="Скриншот 1"><img src="img/shifthappens_1.jpg" alt="Shift Happens — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/shifthappens_2.jpg" aria-label="Скриншот 2"><img src="img/shifthappens_2.jpg" alt="Shift Happens — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/359840/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/359840/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -757,11 +724,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>платформер</li><li>хардкор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/breadfred_1.jpg" aria-label="Скриншот 1"><img src="img/breadfred_1.jpg" alt="Bread &amp; Fred — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/breadfred_2.jpg" aria-label="Скриншот 2"><img src="img/breadfred_2.jpg" alt="Bread &amp; Fred — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1607680/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1607680/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -783,11 +748,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 3 игроков</li><li>головоломки</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/trine2_1.jpg" aria-label="Скриншот 1"><img src="img/trine2_1.jpg" alt="Trine 2: Complete Story — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/trine2_2.jpg" aria-label="Скриншот 2"><img src="img/trine2_2.jpg" alt="Trine 2: Complete Story — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 3 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/35720/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/35720/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -809,11 +772,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 3 игроков</li><li>классика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/trineee_1.jpg" aria-label="Скриншот 1"><img src="img/trineee_1.jpg" alt="Trine: Enchanted Edition — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/trineee_2.jpg" aria-label="Скриншот 2"><img src="img/trineee_2.jpg" alt="Trine: Enchanted Edition — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 3 игроков · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/35700/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/35700/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -835,11 +796,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 3 игроков</li><li>головоломки</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/trine5_1.jpg" aria-label="Скриншот 1"><img src="img/trine5_1.jpg" alt="Trine 5: A Clockwork Conspiracy — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/trine5_2.jpg" aria-label="Скриншот 2"><img src="img/trine5_2.jpg" alt="Trine 5: A Clockwork Conspiracy — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 3 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1436700/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1436700/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -861,11 +820,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>головоломки</li><li>вечеринка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/keeptalking_1.jpg" aria-label="Скриншот 1"><img src="img/keeptalking_1.jpg" alt="Keep Talking and Nobody Explodes — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/keeptalking_2.jpg" aria-label="Скриншот 2"><img src="img/keeptalking_2.jpg" alt="Keep Talking and Nobody Explodes — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2+ игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/341800/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/341800/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -898,11 +855,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>вечеринка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/overcooked2_1.jpg" aria-label="Скриншот 1"><img src="img/overcooked2_1.jpg" alt="Overcooked! 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/overcooked2_2.jpg" aria-label="Скриншот 2"><img src="img/overcooked2_2.jpg" alt="Overcooked! 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/728880/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/728880/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -924,11 +879,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>хаос</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/movingout2_1.jpg" aria-label="Скриншот 1"><img src="img/movingout2_1.jpg" alt="Moving Out 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/movingout2_2.jpg" aria-label="Скриншот 2"><img src="img/movingout2_2.jpg" alt="Moving Out 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1641700/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1641700/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -950,11 +903,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>рогалик</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/plateup_1.jpg" aria-label="Скриншот 1"><img src="img/plateup_1.jpg" alt="PlateUp! — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/plateup_2.jpg" aria-label="Скриншот 2"><img src="img/plateup_2.jpg" alt="PlateUp! — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1599600/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1599600/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -976,11 +927,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>хаос</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/toolsup_1.jpg" aria-label="Скриншот 1"><img src="img/toolsup_1.jpg" alt="Tools Up! — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/toolsup_2.jpg" aria-label="Скриншот 2"><img src="img/toolsup_2.jpg" alt="Tools Up! — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈5 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1004490/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1004490/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1002,11 +951,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>сессии</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/unrailed_1.jpg" aria-label="Скриншот 1"><img src="img/unrailed_1.jpg" alt="Unrailed! — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/unrailed_2.jpg" aria-label="Скриншот 2"><img src="img/unrailed_2.jpg" alt="Unrailed! — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1016920/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1016920/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1028,11 +975,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>космос</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/outofspace_1.jpg" aria-label="Скриншот 1"><img src="img/outofspace_1.jpg" alt="Out of Space — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/outofspace_2.jpg" aria-label="Скриншот 2"><img src="img/outofspace_2.jpg" alt="Out of Space — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/400080/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/400080/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1054,11 +999,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>уборка</li><li>медитативное</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/powerwash2_1.jpg" aria-label="Скриншот 1"><img src="img/powerwash2_1.jpg" alt="PowerWash Simulator 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/powerwash2_2.jpg" aria-label="Скриншот 2"><img src="img/powerwash2_2.jpg" alt="PowerWash Simulator 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/2968420/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/2968420/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1080,11 +1023,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>песочница</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/wobblylife_1.jpg" aria-label="Скриншот 1"><img src="img/wobblylife_1.jpg" alt="Wobbly Life — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/wobblylife_2.jpg" aria-label="Скриншот 2"><img src="img/wobblylife_2.jpg" alt="Wobbly Life — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">бесконечно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1211020/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1211020/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1106,11 +1047,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>абсурд</li><li>песочница</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/goat3_1.jpg" aria-label="Скриншот 1"><img src="img/goat3_1.jpg" alt="Goat Simulator 3 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/goat3_2.jpg" aria-label="Скриншот 2"><img src="img/goat3_2.jpg" alt="Goat Simulator 3 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/850190/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/850190/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1132,11 +1071,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>физика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/hff_1.jpg" aria-label="Скриншот 1"><img src="img/hff_1.jpg" alt="Human Fall Flat — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/hff_2.jpg" aria-label="Скриншот 2"><img src="img/hff_2.jpg" alt="Human Fall Flat — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/477160/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/477160/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1158,11 +1095,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>абсурд</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/octodad_1.jpg" aria-label="Скриншот 1"><img src="img/octodad_1.jpg" alt="Octodad: Dadliest Catch — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/octodad_2.jpg" aria-label="Скриншот 2"><img src="img/octodad_2.jpg" alt="Octodad: Dadliest Catch — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/224480/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/224480/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1184,11 +1119,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>абсурд</li><li>короткая</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/pikuniku_1.jpg" aria-label="Скриншот 1"><img src="img/pikuniku_1.jpg" alt="Pikuniku — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/pikuniku_2.jpg" aria-label="Скриншот 2"><img src="img/pikuniku_2.jpg" alt="Pikuniku — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈3 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/572890/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/572890/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1210,11 +1143,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>ритм</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/rhythmdoctor_1.jpg" aria-label="Скриншот 1"><img src="img/rhythmdoctor_1.jpg" alt="Rhythm Doctor — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/rhythmdoctor_2.jpg" aria-label="Скриншот 2"><img src="img/rhythmdoctor_2.jpg" alt="Rhythm Doctor — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/774181/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/774181/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1236,11 +1167,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>ритм</li><li>до 4 игроков</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/justshapes_1.jpg" aria-label="Скриншот 1"><img src="img/justshapes_1.jpg" alt="Just Shapes &amp; Beats — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/justshapes_2.jpg" aria-label="Скриншот 2"><img src="img/justshapes_2.jpg" alt="Just Shapes &amp; Beats — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/531510/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/531510/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1262,11 +1191,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>ритм</li><li>классика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/tetris_1.jpg" aria-label="Скриншот 1"><img src="img/tetris_1.jpg" alt="Tetris Effect: Connected — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/tetris_2.jpg" aria-label="Скриншот 2"><img src="img/tetris_2.jpg" alt="Tetris Effect: Connected — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1003590/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1003590/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1288,11 +1215,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>кооп-кампания</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/lovers_1.jpg" aria-label="Скриншот 1"><img src="img/lovers_1.jpg" alt="Lovers in a Dangerous Spacetime — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/lovers_2.jpg" aria-label="Скриншот 2"><img src="img/lovers_2.jpg" alt="Lovers in a Dangerous Spacetime — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/252110/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/252110/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -1325,11 +1250,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>сюжет</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/morta_1.jpg" aria-label="Скриншот 1"><img src="img/morta_1.jpg" alt="Children of Morta — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/morta_2.jpg" aria-label="Скриншот 2"><img src="img/morta_2.jpg" alt="Children of Morta — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈15 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/330020/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/330020/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1351,11 +1274,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>скорость</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/wol_1.jpg" aria-label="Скриншот 1"><img src="img/wol_1.jpg" alt="Wizard of Legend — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/wol_2.jpg" aria-label="Скриншот 2"><img src="img/wol_2.jpg" alt="Wizard of Legend — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/445980/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/445980/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1377,11 +1298,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>хардкор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/gungeon_1.jpg" aria-label="Скриншот 1"><img src="img/gungeon_1.jpg" alt="Enter the Gungeon — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/gungeon_2.jpg" aria-label="Скриншот 2"><img src="img/gungeon_2.jpg" alt="Enter the Gungeon — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/311690/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/311690/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1403,11 +1322,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>хардкор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/spelunky2_1.jpg" aria-label="Скриншот 1"><img src="img/spelunky2_1.jpg" alt="Spelunky 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/spelunky2_2.jpg" aria-label="Скриншот 2"><img src="img/spelunky2_2.jpg" alt="Spelunky 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/418530/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/418530/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1429,11 +1346,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>классика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/spelunky_1.jpg" aria-label="Скриншот 1"><img src="img/spelunky_1.jpg" alt="Spelunky — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/spelunky_2.jpg" aria-label="Скриншот 2"><img src="img/spelunky_2.jpg" alt="Spelunky — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">15+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/239350/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/239350/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1455,11 +1370,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>шутер</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/nuclearthrone_1.jpg" aria-label="Скриншот 1"><img src="img/nuclearthrone_1.jpg" alt="Nuclear Throne — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/nuclearthrone_2.jpg" aria-label="Скриншот 2"><img src="img/nuclearthrone_2.jpg" alt="Nuclear Throne — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">10+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/242680/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/242680/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1481,11 +1394,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>песочница</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/streetsofrogue_1.jpg" aria-label="Скриншот 1"><img src="img/streetsofrogue_1.jpg" alt="Streets of Rogue — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/streetsofrogue_2.jpg" aria-label="Скриншот 2"><img src="img/streetsofrogue_2.jpg" alt="Streets of Rogue — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">15+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/512900/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/512900/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1507,11 +1418,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>рогалик</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/emberknights_1.jpg" aria-label="Скриншот 1"><img src="img/emberknights_1.jpg" alt="Ember Knights — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/emberknights_2.jpg" aria-label="Скриншот 2"><img src="img/emberknights_2.jpg" alt="Ember Knights — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈12 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1135230/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1135230/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1533,11 +1442,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>боссы</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/rabbitandsteel_1.jpg" aria-label="Скриншот 1"><img src="img/rabbitandsteel_1.jpg" alt="Rabbit and Steel — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/rabbitandsteel_2.jpg" aria-label="Скриншот 2"><img src="img/rabbitandsteel_2.jpg" alt="Rabbit and Steel — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/2132850/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/2132850/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1559,11 +1466,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>спорт</li><li>рогалик</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/tapetotape_1.jpg" aria-label="Скриншот 1"><img src="img/tapetotape_1.jpg" alt="Tape to Tape — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/tapetotape_2.jpg" aria-label="Скриншот 2"><img src="img/tapetotape_2.jpg" alt="Tape to Tape — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1566200/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1566200/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1585,11 +1490,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>PvP-элемент</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/crawl_1.jpg" aria-label="Скриншот 1"><img src="img/crawl_1.jpg" alt="Crawl — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/crawl_2.jpg" aria-label="Скриншот 2"><img src="img/crawl_2.jpg" alt="Crawl — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/293780/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/293780/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1611,11 +1514,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>рогалик</li><li>зомби</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/deathroad_1.jpg" aria-label="Скриншот 1"><img src="img/deathroad_1.jpg" alt="Death Road to Canada — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/deathroad_2.jpg" aria-label="Скриншот 2"><img src="img/deathroad_2.jpg" alt="Death Road to Canada — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/252610/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/252610/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1637,11 +1538,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>выживание</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/vampiresurvivors_1.jpg" aria-label="Скриншот 1"><img src="img/vampiresurvivors_1.jpg" alt="Vampire Survivors — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/vampiresurvivors_2.jpg" aria-label="Скриншот 2"><img src="img/vampiresurvivors_2.jpg" alt="Vampire Survivors — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1794680/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1794680/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1663,11 +1562,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>ритм</li><li>рогалик</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/necrodancer_1.jpg" aria-label="Скриншот 1"><img src="img/necrodancer_1.jpg" alt="Crypt of the NecroDancer — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/necrodancer_2.jpg" aria-label="Скриншот 2"><img src="img/necrodancer_2.jpg" alt="Crypt of the NecroDancer — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">15+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/247080/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/247080/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -1700,11 +1597,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>битемап</li><li>музыка</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/sor4_1.jpg" aria-label="Скриншот 1"><img src="img/sor4_1.jpg" alt="Streets of Rage 4 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/sor4_2.jpg" aria-label="Скриншот 2"><img src="img/sor4_2.jpg" alt="Streets of Rage 4 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈5 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/985890/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/985890/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1726,11 +1621,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 6 игроков</li><li>аркада</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/tmnt_1.jpg" aria-label="Скриншот 1"><img src="img/tmnt_1.jpg" alt="Teenage Mutant Ninja Turtles: Shredder&#x27;s Revenge — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/tmnt_2.jpg" aria-label="Скриншот 2"><img src="img/tmnt_2.jpg" alt="Teenage Mutant Ninja Turtles: Shredder&#x27;s Revenge — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 6 игроков · <span class="accent">≈4 часа</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1361510/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1361510/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1752,11 +1645,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>классика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/castle_1.jpg" aria-label="Скриншот 1"><img src="img/castle_1.jpg" alt="Castle Crashers — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/castle_2.jpg" aria-label="Скриншот 2"><img src="img/castle_2.jpg" alt="Castle Crashers — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/204360/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/204360/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1778,11 +1669,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>хаос</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/broforce_1.jpg" aria-label="Скриншот 1"><img src="img/broforce_1.jpg" alt="Broforce — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/broforce_2.jpg" aria-label="Скриншот 2"><img src="img/broforce_2.jpg" alt="Broforce — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/274190/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/274190/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1804,11 +1693,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>метроидвания</li><li>юмор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/guac2_1.jpg" aria-label="Скриншот 1"><img src="img/guac2_1.jpg" alt="Guacamelee! 2 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/guac2_2.jpg" aria-label="Скриншот 2"><img src="img/guac2_2.jpg" alt="Guacamelee! 2 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/534550/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/534550/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1830,11 +1717,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>тактика</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/fmf_1.jpg" aria-label="Скриншот 1"><img src="img/fmf_1.jpg" alt="Full Metal Furies — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/fmf_2.jpg" aria-label="Скриншот 2"><img src="img/fmf_2.jpg" alt="Full Metal Furies — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈12 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/416600/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/416600/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1856,11 +1741,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>соулслайк</li><li>хардкор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/salt_1.jpg" aria-label="Скриншот 1"><img src="img/salt_1.jpg" alt="Salt and Sanctuary — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/salt_2.jpg" aria-label="Скриншот 2"><img src="img/salt_2.jpg" alt="Salt and Sanctuary — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/283640/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/283640/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1882,11 +1765,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>тактика</li><li>юмор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/pitpeople_1.jpg" aria-label="Скриншот 1"><img src="img/pitpeople_1.jpg" alt="Pit People — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/pitpeople_2.jpg" aria-label="Скриншот 2"><img src="img/pitpeople_2.jpg" alt="Pit People — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈12 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/291860/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/291860/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1908,11 +1789,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>магия</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/magicka_1.jpg" aria-label="Скриншот 1"><img src="img/magicka_1.jpg" alt="Magicka — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/magicka_2.jpg" aria-label="Скриншот 2"><img src="img/magicka_2.jpg" alt="Magicka — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈6 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/42910/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/42910/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1934,11 +1813,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>орды</li><li>шутер</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/edf41_1.jpg" aria-label="Скриншот 1"><img src="img/edf41_1.jpg" alt="Earth Defense Force 4.1 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/edf41_2.jpg" aria-label="Скриншот 2"><img src="img/edf41_2.jpg" alt="Earth Defense Force 4.1 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/410320/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/410320/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1960,11 +1837,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>орды</li><li>шутер</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/edf5_1.jpg" aria-label="Скриншот 1"><img src="img/edf5_1.jpg" alt="Earth Defense Force 5 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/edf5_2.jpg" aria-label="Скриншот 2"><img src="img/edf5_2.jpg" alt="Earth Defense Force 5 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">25+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1007040/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1007040/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -1986,11 +1861,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>экшен</li><li>орды</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/madness_1.jpg" aria-label="Скриншот 1"><img src="img/madness_1.jpg" alt="MADNESS: Project Nexus — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/madness_2.jpg" aria-label="Скриншот 2"><img src="img/madness_2.jpg" alt="MADNESS: Project Nexus — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/488860/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/488860/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2012,11 +1885,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>битемап</li><li>фэнтези</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/absolum_1.jpg" aria-label="Скриншот 1"><img src="img/absolum_1.jpg" alt="Absolum — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/absolum_2.jpg" aria-label="Скриншот 2"><img src="img/absolum_2.jpg" alt="Absolum — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1904480/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1904480/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2038,11 +1909,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>боссы</li><li>хардкор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/cuphead_1.jpg" aria-label="Скриншот 1"><img src="img/cuphead_1.jpg" alt="Cuphead — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/cuphead_2.jpg" aria-label="Скриншот 2"><img src="img/cuphead_2.jpg" alt="Cuphead — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/268910/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/268910/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2064,11 +1933,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>платформер</li><li>ретро</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/shovelknight_1.jpg" aria-label="Скриншот 1"><img src="img/shovelknight_1.jpg" alt="Shovel Knight: Treasure Trove — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/shovelknight_2.jpg" aria-label="Скриншот 2"><img src="img/shovelknight_2.jpg" alt="Shovel Knight: Treasure Trove — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈10 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/250760/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/250760/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -2101,11 +1968,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>стратегия</li><li>медитативное</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/k2c_1.jpg" aria-label="Скриншот 1"><img src="img/k2c_1.jpg" alt="Kingdom Two Crowns — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/k2c_2.jpg" aria-label="Скриншот 2"><img src="img/k2c_2.jpg" alt="Kingdom Two Crowns — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">15+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/701160/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/701160/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2127,11 +1992,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>пошаговое</li><li>рогалик</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/ftk_1.jpg" aria-label="Скриншот 1"><img src="img/ftk_1.jpg" alt="For The King — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/ftk_2.jpg" aria-label="Скриншот 2"><img src="img/ftk_2.jpg" alt="For The King — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/527230/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/527230/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2153,11 +2016,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>экшен-RPG</li><li>милота</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/catquest2_1.jpg" aria-label="Скриншот 1"><img src="img/catquest2_1.jpg" alt="Cat Quest II — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/catquest2_2.jpg" aria-label="Скриншот 2"><img src="img/catquest2_2.jpg" alt="Cat Quest II — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/914710/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/914710/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2179,11 +2040,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>уютное</li><li>история</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/spiritfarer_1.jpg" aria-label="Скриншот 1"><img src="img/spiritfarer_1.jpg" alt="Spiritfarer — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/spiritfarer_2.jpg" aria-label="Скриншот 2"><img src="img/spiritfarer_2.jpg" alt="Spiritfarer — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈25 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/972660/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/972660/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2205,11 +2064,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>до 4 игроков</li><li>лут</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/mcd_1.jpg" aria-label="Скриншот 1"><img src="img/mcd_1.jpg" alt="Minecraft Dungeons — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/mcd_2.jpg" aria-label="Скриншот 2"><img src="img/mcd_2.jpg" alt="Minecraft Dungeons — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">≈8 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1672970/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1672970/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2231,11 +2088,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>экшен-RPG</li><li>юмор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/nsw_1.jpg" aria-label="Скриншот 1"><img src="img/nsw_1.jpg" alt="Nobody Saves the World — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/nsw_2.jpg" aria-label="Скриншот 2"><img src="img/nsw_2.jpg" alt="Nobody Saves the World — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">≈15 часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1432050/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1432050/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2257,11 +2112,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>песочница</li><li>крафт</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/portalknights_1.jpg" aria-label="Скриншот 1"><img src="img/portalknights_1.jpg" alt="Portal Knights — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/portalknights_2.jpg" aria-label="Скриншот 2"><img src="img/portalknights_2.jpg" alt="Portal Knights — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">25+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/374040/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/374040/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2283,11 +2136,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>песочница</li><li>автоматизация</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/hydroneer_1.jpg" aria-label="Скриншот 1"><img src="img/hydroneer_1.jpg" alt="Hydroneer — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/hydroneer_2.jpg" aria-label="Скриншот 2"><img src="img/hydroneer_2.jpg" alt="Hydroneer — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">20+ часов</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/1106840/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/1106840/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -2320,11 +2171,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>гонки</li><li>неон</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/distance_1.jpg" aria-label="Скриншот 1"><img src="img/distance_1.jpg" alt="Distance — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/distance_2.jpg" aria-label="Скриншот 2"><img src="img/distance_2.jpg" alt="Distance — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">до 4 игроков · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/233610/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/233610/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2346,11 +2195,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>гонки</li><li>драки</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/roadredemption_1.jpg" aria-label="Скриншот 1"><img src="img/roadredemption_1.jpg" alt="Road Redemption — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/roadredemption_2.jpg" aria-label="Скриншот 2"><img src="img/roadredemption_2.jpg" alt="Road Redemption — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/300380/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/300380/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article>
@@ -2372,11 +2219,9 @@ footer a{color:#a8e4ff;text-decoration:none}
         <ul class="tags"><li>гонки</li><li>симулятор</li></ul>
         <div class="gallery"><button class="shot" type="button" data-full="img/f125_1.jpg" aria-label="Скриншот 1"><img src="img/f125_1.jpg" alt="F1 25 — скриншот 1" loading="lazy"></button><button class="shot" type="button" data-full="img/f125_2.jpg" aria-label="Скриншот 2"><img src="img/f125_2.jpg" alt="F1 25 — скриншот 2" loading="lazy"></button></div>
         <div class="foot">
+          <a class="totoc" href="#table">↑ К содержанию</a>
           <span class="facts">2 игрока · <span class="accent">сессионно</span></span>
-          <span class="foot-links">
-            <a class="totoc" href="#table">↑ к содержанию</a>
-            <a class="steam" href="https://store.steampowered.com/app/3059520/" target="_blank" rel="noopener">Steam ↗</a>
-          </span>
+          <a class="steam" href="https://store.steampowered.com/app/3059520/" target="_blank" rel="noopener">Steam ↗</a>
         </div>
       </div>
     </article></div>
@@ -2468,7 +2313,7 @@ footer a{color:#a8e4ff;text-decoration:none}
 
 <script>
 (function(){
-  var V = "2026-11-09.2";
+  var V = "2026-11-09.3";
   try {
     fetch("../version.json?t=" + Date.now(), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
       if (!d || !d.v || d.v === V) return;
