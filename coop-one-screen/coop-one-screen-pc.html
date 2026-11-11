@@ -143,7 +143,13 @@ th{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--di
 tbody tr:hover{background:rgba(255,255,255,.03)}
 .t-name a{text-decoration:none;font-weight:600}
 .t-name a:hover{color:#a8e4ff}
-.tbl-wrap{overflow:auto;max-height:62vh;border:1px solid var(--line);border-radius:18px;padding:4px 10px;background:rgba(255,255,255,.02)}
+.tbl-wrap{overflow:auto;max-height:62vh;border:1px solid var(--line);border-radius:18px;padding:4px 10px;background:rgba(255,255,255,.02);
+  scrollbar-width:thin;scrollbar-color:#3c3c4e rgba(255,255,255,.05)}
+.tbl-wrap::-webkit-scrollbar{width:10px;height:10px}
+.tbl-wrap::-webkit-scrollbar-track{background:rgba(255,255,255,.05);border-radius:999px}
+.tbl-wrap::-webkit-scrollbar-thumb{background:#3c3c4e;border-radius:999px}
+.tbl-wrap::-webkit-scrollbar-thumb:hover{background:#55556d}
+.tbl-wrap::-webkit-scrollbar-corner{background:transparent}
 footer{margin:80px 0 60px;padding-top:24px;border-top:1px solid var(--line);color:var(--dim);font-size:13px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 footer a{color:#a8e4ff;text-decoration:none}
 .lb{position:fixed;inset:0;z-index:100;background:rgba(4,4,7,.92);display:none;align-items:center;justify-content:center;padding:4vw;cursor:zoom-out;backdrop-filter:blur(8px)}
@@ -2313,7 +2319,7 @@ footer a{color:#a8e4ff;text-decoration:none}
 
 <script>
 (function(){
-  var V = "2026-11-09.3";
+  var V = "2026-11-11.1";
   try {
     fetch("../version.json?t=" + Date.now(), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
       if (!d || !d.v || d.v === V) return;
