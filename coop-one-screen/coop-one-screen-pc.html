@@ -7,6 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="theme-color" content="#0b0b12">
+<script>if(/YaBrowser/i.test(navigator.userAgent)){document.documentElement.classList.add("ya-browser");}</script>
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -165,6 +166,7 @@ footer a{color:#a8e4ff;text-decoration:none}
 .totop:hover{border-color:rgba(56,189,248,.65);background:rgba(56,189,248,.16)}
 @media(max-width:600px){.totop{right:16px;bottom:16px;width:42px;height:42px}}
 @media print{.totop{display:none}}
+html.ya-browser .totop{display:none}
 .micro{width:46px;height:46px;border-radius:12px;object-fit:cover;flex:0 0 auto;border:1px solid var(--line);background:#0a0a10}
 .head{align-items:center}
 .sub .num{padding-top:0;margin-right:8px}
