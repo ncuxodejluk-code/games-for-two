@@ -7,7 +7,6 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="theme-color" content="#0b0b12">
-<script>if(/YaBrowser/i.test(navigator.userAgent)){document.documentElement.classList.add("ya-browser");}</script>
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -156,7 +155,7 @@ footer a{color:#a8e4ff;text-decoration:none}
 .lb{position:fixed;inset:0;z-index:100;background:rgba(4,4,7,.92);display:none;align-items:center;justify-content:center;padding:4vw;cursor:zoom-out;backdrop-filter:blur(8px)}
 .lb.on{display:flex}
 .lb img{max-width:100%;max-height:92vh;border-radius:14px;box-shadow:0 40px 90px rgba(0,0,0,.7)}
-.totop{position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+.totop{position:fixed;right:max(16px,calc(50% - 542px));bottom:24px;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   border:1px solid rgba(255,255,255,.16);background:rgba(16,16,23,.84);color:#fff;cursor:pointer;z-index:60;
   backdrop-filter:blur(10px);opacity:0;transform:translateY(12px);pointer-events:none;
   transition:opacity .25s ease,transform .25s ease,border-color .25s ease,background .25s ease;
@@ -166,7 +165,6 @@ footer a{color:#a8e4ff;text-decoration:none}
 .totop:hover{border-color:rgba(56,189,248,.65);background:rgba(56,189,248,.16)}
 @media(max-width:600px){.totop{right:16px;bottom:16px;width:42px;height:42px}}
 @media print{.totop{display:none}}
-html.ya-browser .totop{display:none}
 .micro{width:46px;height:46px;border-radius:12px;object-fit:cover;flex:0 0 auto;border:1px solid var(--line);background:#0a0a10}
 .head{align-items:center}
 .sub .num{padding-top:0;margin-right:8px}

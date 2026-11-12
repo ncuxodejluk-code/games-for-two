@@ -24,8 +24,13 @@
 (function(){
   var btn=document.querySelector('.totop');
   if(!btn) return;
-  function upd(){ if(window.scrollY>500){btn.classList.add('on');}else{btn.classList.remove('on');} }
+  var touch = !!(window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+  function upd(){
+    var nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 120;
+    if(window.scrollY>500 && !(touch && nearBottom)){btn.classList.add('on');}else{btn.classList.remove('on');}
+  }
   window.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('resize',upd);
   upd();
   btn.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
 })();
