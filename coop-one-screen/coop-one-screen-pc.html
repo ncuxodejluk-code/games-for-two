@@ -116,6 +116,13 @@ h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;c
 .accent{color:#a8e4ff}
 .steam{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;color:#dcdce8;transition:all .2s}
 .steam:hover{border-color:rgba(255,46,116,.5);color:#fff;background:rgba(255,46,116,.1)}
+.copylink{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:13px;color:#dcdce8;background:none;
+  border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap;transition:all .2s}
+.copylink svg{width:14px;height:14px;flex:0 0 auto;opacity:.85}
+.copylink:hover{border-color:rgba(56,189,248,.5);color:#fff;background:rgba(56,189,248,.1)}
+.copylink.done{border-color:rgba(52,211,153,.55);color:#4ade80;background:rgba(52,211,153,.08)}
+.copylink.done svg{opacity:1}
+@media(max-width:600px){.foot{flex-wrap:wrap}}
 .bonus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:1000px){.bonus-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.bonus-grid{grid-template-columns:1fr}}
@@ -167,7 +174,7 @@ footer a{color:#a8e4ff;text-decoration:none}
 @media print{.totop{display:none}}
 .micro{width:46px;height:46px;border-radius:12px;object-fit:cover;flex:0 0 auto;border:1px solid var(--line);background:#0a0a10}
 .head{align-items:center}
-.sub .num{padding-top:0;margin-right:8px}
+.sub .num{padding-top:0;margin-right:8px}
 .totoc{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700;
   color:#0b0b12;border:0;border-radius:999px;padding:8px 15px;white-space:nowrap;
   background:linear-gradient(90deg,#38bdf8,#a855f7);transition:filter .2s ease,transform .2s ease;
@@ -2316,6 +2323,6 @@ footer a{color:#a8e4ff;text-decoration:none}
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
 </button>
 
-<script src="../assets/app.js"></script>
+<script src="../assets/app.js?v=2026-11-14.1"></script>
 </body>
 </html>
